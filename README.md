@@ -53,19 +53,6 @@ The program analyzes each algorithm by collecting key performance metrics:
     - A table is displayed showing the performance metrics for each algorithm.
     - The average turnaround time for each algorithm is calculated and displayed.
 
-## Example Output Table
-
-| Algorithm              | Average Turnaround Time | Throughput |
-|------------------------|-------------------------|------------|
-| FIFO                   | X.XX                    | Y.YY       |
-| SJF (Non-Preemptive)   | X.XX                    | Y.YY       |
-| SRJF (Preemptive)      | X.XX                    | Y.YY       |
-| Highest Priority       | X.XX                    | Y.YY       |
-| Round-Robin (No CS)    | X.XX                    | Y.YY       |
-| Round-Robin (With CS)  | X.XX                    | Y.YY       |
-
-*Note: Replace X.XX and Y.YY with the actual calculated values from the program's output.*
-
 ## Conclusion
 
 This program provides a comprehensive simulation of various CPU scheduling algorithms, offering insights into their performance through key metrics. By analyzing turnaround time and throughput, the program helps in understanding the efficiency and suitability of each algorithm in different scenarios.
