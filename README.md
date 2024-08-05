@@ -1,5 +1,72 @@
-Java program that runs FIFO, Shortest Job Algorithm (non-premptive,) Shortest Remaming Job Algorithm (pre-emptive,) "Highest Priority Algorithm, and Round-Robin with and without context switch for a set of simulated jobs.
-All algorithms have been analyzed by collecting turn around time, and through-put for a fixed length of time.
-Output includes a table showing balues for each algorithm, and calculates the average turn around time.
+# CPU Scheduling Algorithms Simulation
 
-Jobs have been randomly generated and stored as job objects. Program will generate 25 jobs, simulate the algorithms, and display their info in the table.
+This Java program simulates various CPU scheduling algorithms to analyze their performance. The program implements the following scheduling algorithms:
+
+- **First-In-First-Out (FIFO)**
+- **Shortest Job First (SJF) - Non-Preemptive**
+- **Shortest Remaining Job First (SRJF) - Preemptive**
+- **Highest Priority Algorithm**
+- **Round-Robin (RR) with and without Context Switch**
+
+## Features
+
+### Scheduling Algorithms
+
+1. **First-In-First-Out (FIFO)**
+    - Jobs are executed in the order they arrive.
+    
+2. **Shortest Job First (SJF)**
+    - Non-preemptive algorithm where the job with the shortest execution time is selected next.
+    
+3. **Shortest Remaining Job First (SRJF)**
+    - Preemptive algorithm where the job with the shortest remaining execution time is selected next.
+    
+4. **Highest Priority Algorithm**
+    - Jobs are selected based on priority, with the highest priority job executed first.
+    
+5. **Round-Robin (RR)**
+    - Jobs are executed in a cyclic order, each receiving a fixed time slice. The implementation includes versions with and without context switching overhead.
+
+### Performance Analysis
+
+The program analyzes each algorithm by collecting key performance metrics:
+
+- **Turnaround Time**: The total time taken from job arrival to completion.
+- **Throughput**: The number of jobs completed within a fixed length of time.
+
+### Output
+
+- **Generated Jobs**: 25 jobs are randomly generated and stored as job objects.
+- **Simulation Results**: The program simulates each scheduling algorithm and displays the results.
+- **Results Table**: A table is generated showing the values for each algorithm, including average turnaround time and throughput.
+
+## Program Workflow
+
+1. **Job Generation**: 
+    - 25 jobs are randomly generated, each represented as a job object with attributes such as arrival time, burst time, and priority.
+    
+2. **Algorithm Simulation**:
+    - Each scheduling algorithm is simulated with the generated jobs.
+    - Turnaround time and throughput are collected for analysis.
+
+3. **Results Display**:
+    - A table is displayed showing the performance metrics for each algorithm.
+    - The average turnaround time for each algorithm is calculated and displayed.
+
+## Example Output Table
+
+| Algorithm              | Average Turnaround Time | Throughput |
+|------------------------|-------------------------|------------|
+| FIFO                   | X.XX                    | Y.YY       |
+| SJF (Non-Preemptive)   | X.XX                    | Y.YY       |
+| SRJF (Preemptive)      | X.XX                    | Y.YY       |
+| Highest Priority       | X.XX                    | Y.YY       |
+| Round-Robin (No CS)    | X.XX                    | Y.YY       |
+| Round-Robin (With CS)  | X.XX                    | Y.YY       |
+
+*Note: Replace X.XX and Y.YY with the actual calculated values from the program's output.*
+
+## Conclusion
+
+This program provides a comprehensive simulation of various CPU scheduling algorithms, offering insights into their performance through key metrics. By analyzing turnaround time and throughput, the program helps in understanding the efficiency and suitability of each algorithm in different scenarios.
+
