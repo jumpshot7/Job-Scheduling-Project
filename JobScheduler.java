@@ -7,6 +7,7 @@ public class JobScheduler {
         jobs = new ArrayList<>();
         generateJobs(25);
     }
+
     private void generateJobs(int numberOfJobs){
         for (int i=0; i< numberOfJobs; i++){
             jobs.add(new Job());
