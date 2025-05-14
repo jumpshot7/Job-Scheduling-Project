@@ -52,8 +52,3 @@ The program analyzes each algorithm by collecting key performance metrics:
 3. **Results Display**:
     - A table is displayed showing the performance metrics for each algorithm.
     - The average turnaround time for each algorithm is calculated and displayed.
-
-## Conclusion
-
-This program provides a comprehensive simulation of various CPU scheduling algorithms, offering insights into their performance through key metrics. By analyzing turnaround time and throughput, the program helps in understanding the efficiency and suitability of each algorithm in different scenarios.
-
